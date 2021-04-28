@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+function handleClick(e){
+  console.log("点击")
+  e.preventDefault();
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+    <div>
+        <h1>
           Learn React
-        </a>
-      </header>
+        </h1>
+        <a href="https://www.baidu.com" onClick={handleClick}>百度一下</a>
     </div>
   );
 }
+
 
 export default App;
